@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".CourseReg">
+
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Course Name"
+        android:inputType="textPersonName"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/courseCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Course Code"
+        android:inputType="textPersonName"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseName" />
+
+    <EditText
+        android:id="@+id/courseCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Course Credits"
+        android:inputType="number"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseCode" />
+
+    <EditText
+        android:id="@+id/projectMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Marks for Projects"
+        android:inputType="number"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseCredit" />
+
+    <EditText
+        android:id="@+id/assignMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Marks for Assignments"
+        android:inputType="number"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectMarks" />
+
+    <EditText
+        android:id="@+id/midMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Marks for Mid-Exam"
+        android:inputType="number"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignMarks" />
+
+    <EditText
+        android:id="@+id/endMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:hint="Marks for End-Exam"
+        android:inputType="number"
+        android:minHeight="35dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midMarks" />
+
+    <Button
+        android:id="@+id/courseReg"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#00FF00"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:text="Register Course"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endMarks" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
