@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Login">
+
+
+
+    <Button
+        android:id="@+id/EnterMarks"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#00FF00"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:onClick="enterMarks"
+        android:text="Enter Marks"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <Button
+        android:id="@+id/currentGpa"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#00FF00"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:onClick="getCurrentGPA"
+        android:text="Current GPA"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterMarks" />
+
+    <Button
+        android:id="@+id/calculateGPA"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#00FF00"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:onClick="expectedMarks"
+        android:text="Required Marks"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expectedGpa" />
+
+    <Button
+        android:id="@+id/expectedGpa"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#00FF00"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:onClick="expectedGrade"
+        android:text="Expected GPA"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentGpa" />
+
+    <Button
+        android:id="@+id/CourseRegister"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#00FF00"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:onClick="courseReg"
+        android:text="Register Course"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateGPA" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/registration" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
