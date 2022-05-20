@@ -6,8 +6,8 @@ Student Result Management App is for manage student's marsks and to get a idea a
 ## Developer Guide
 
 ### Prerequistes 
-     JAVA JDM
-     XML Markup Language
+     JAVA JDK
+     XML
      PHP
      MySQL Server
 
